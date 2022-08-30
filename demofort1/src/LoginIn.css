@@ -1,0 +1,103 @@
+*{
+    margin:0;
+}
+
+#group-choice > * {
+    position: relative;
+    margin-right: 10px;
+}
+
+
+.table-subadmins {
+    position:relative;
+    margin-top:20px;
+    border-top: 2px solid blue;
+}
+
+
+.table-subadmins > div {
+    margin-top: 25px;
+    border-top: 2px solid blue;
+}
+
+
+.table-subadmins > div{
+    padding-top:12px;
+}
+
+#table-subadmins-hearder {
+    margin-top: 0px;
+    padding-top: 5px;
+}
+
+.table-subadmins > div :nth-child(1) {
+    position: absolute;
+    left: 5%;
+}
+.table-subadmins > div :nth-child(2){
+    position:absolute;
+    left:15%;
+    
+}
+.table-subadmins > div :nth-child(3){
+    position:absolute;
+    left:35%;
+}
+
+.table-subadmins > div :nth-child(4){
+    position:absolute;
+    left:55%;
+}
+
+
+.table-subadmins > div :nth-child(5) {
+    position: absolute;
+    left: 65%;
+}
+
+.table-subadmins > div :nth-child(6) {
+    position: absolute;
+    left: 75%;
+}
+
+.table-subadmins > div :nth-child(7) {
+    position: absolute;
+    left: 85%;
+}
+
+#main-mask {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(128, 128, 128, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#new-group-ui {
+    position: absolute;
+    box-shadow: 5px 8px 100px -12px;
+    width: 500px;
+    height: 550px;
+    background:#ffffff;
+    border-radius: 15px;
+    padding:30px;
+}
+
+#new-group-ui > *{
+    display: flex;
+    margin:8px;
+    
+}
+
+
+.none-display{
+    display:none !important;
+}
+
+
+select{
+    width:140px;
+}
