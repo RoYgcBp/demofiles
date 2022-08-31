@@ -21,12 +21,14 @@ class EnterprisesModelViewSet(ModelViewSet):
     # http://127.0.0.1:8000/madmin/enterprises/ent/login/
     @action(methods=["post"],detail=False,url_path="ent/login")
     def login(self,request):
-        username = request.data["username"]
-        password = request.data["hash"]
+        
         
         for instance in self.queryset:
+            username = request.data["username"]
+            password = request.data["hash"]
             usernameplus = instance.salt + username
             username = md5(usernameplus.encode('utf8')).hexdigest()[0:20]
+            
             if instance.username == username:
                 passwordplus = password + instance.salt
                 hash = md5(passwordplus.encode('utf8')).hexdigest()
