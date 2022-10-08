@@ -1,0 +1,132 @@
+
+#canlendar-win{
+    position:relative;
+    height:100%;
+    width:100%;
+    animation: appear 0.5s forwards;
+    color:aliceblue;
+    user-select:none;
+}
+
+#canlendar-win::before{
+    content:"";
+    position:absolute;
+    width:20%;
+    height:20%;
+    top:-5%;
+    left:8%;
+    border-top:1px solid white;
+    border-left:1px solid white;
+}
+
+#canlendar-win::after{
+    content:"";
+    position:absolute;
+    width:20%;
+    height:20%;
+    right:10%;
+    bottom:-4%;
+    border-bottom:1px solid white;
+    border-right:1px solid white;
+}
+
+
+@keyframes appear{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1
+    }
+}
+
+.year-month {
+    margin: 0px 10px 0 10px;
+    font-size: 25px;
+    width: 70px;
+    text-align: center;
+    background-color: rgba(0,0,0,0);
+    color: aliceblue;
+    border: none;
+    outline: none;
+}
+
+
+
+.change-month {
+    margin-left: 10px;
+    border:none;
+    font-size: 23px;
+    width: 36px;
+    color: white;
+    background-color: rgba(0,0,0,0);
+}
+
+.change-month:hover{
+    animation:enterBtn 0.3s forwards;
+}
+
+#week {
+    display: flex;
+    justify-content: center;
+    margin: 6px 0 0 0;
+    width: 300px;
+}
+
+#week > li {
+    display: inline-block;
+    margin:5px 5px 0 5px;
+    
+}
+
+#days {
+
+    margin-top:3px;
+}
+
+#days > ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3px;
+}
+
+#days > ul > li {
+    display: inline-block;
+}
+
+#days > ul > li > button{
+    font-size: 18px;
+    width:38px;
+    height:35px;
+    margin-right:5px;
+    border:none;
+    color:white;
+    background-color: rgba(0,0,0,0);
+}
+
+@keyframes enterBtn{
+    from{
+
+    }
+    to{
+        background-color:powderblue;
+    }
+}
+
+#days > ul > li > button:hover{
+    animation:enterBtn 0.3s forwards;
+}
+
+.gray{
+    color:rgba(255, 255, 255,0.5) !important;
+}
+
+.red{
+    color:red;
+}
+
+
+.center-div {
+    display: flex;
+    justify-content: center;
+}

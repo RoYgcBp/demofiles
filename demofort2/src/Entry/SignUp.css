@@ -1,0 +1,253 @@
+#signin-in-win{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    
+}
+
+@keyframes mask-init{
+    from{
+
+    }
+    to{
+        transform: rotateZ(45deg);
+        
+    }
+}
+@keyframes mask-quit{
+    from{
+        transform: rotateZ(45deg);
+    }
+    to{
+        
+        
+    }
+}
+
+.mask-div-enter{
+    background-color: aliceblue;
+    position: absolute;
+    right: 0;
+    width: 150%;
+    height: 100%;
+    transform-origin:right bottom;
+    animation: mask-init 0.5s forwards;
+}
+.mask-div-quit{
+    background-color: aliceblue;
+    position: absolute;
+    right: 0;
+    width: 150%;
+    height: 100%;
+    transform-origin:right bottom;
+    animation: mask-quit 0.5s forwards;
+}
+
+
+
+@keyframes style1-enter{
+    from{
+        transform: translateX(-50px);
+    }
+    to{
+    }
+}
+
+@keyframes style1-input-enter{
+    from{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to{
+        
+    }
+}
+
+
+
+.style1{
+    margin-left: 15%;
+    color: white;
+    font-size: 170%;
+    font-weight: bold;
+    animation: style1-enter 0.5s forwards;
+    user-select: none;
+}
+
+
+.style1 > input{
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 300px;
+    font-size: 20px;
+    color:aliceblue;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: 1px solid #ccc;
+    animation: style1-input-enter 0.5s forwards;
+}
+
+.style1 > input:focus{
+
+    outline: none;
+}
+
+.active-input{
+    margin-top: 13%;
+    
+}
+
+.active-input > input{
+    margin-top: 10px;
+    
+}
+
+@keyframes btn-style1-enter {
+    from{
+        opacity: 0;
+    }
+    to{
+
+    }
+}
+
+
+.btn-style1 > button{
+    position: relative;
+    font-size: 25px;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0);
+    width: 200px;
+    border: none;
+    animation:  btn-style1-enter 1s forwards;
+    user-select:none;
+}
+
+.btn-style1 > button:hover{
+    opacity: 0.5;
+}
+
+.btn-style1 > button::before{
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -8px;
+    height: 50%;
+    width: 40%;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    
+}
+
+.btn-style1 > button::after{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 9px;
+    bottom: -6px;
+    height: 70%;
+    width: 30%;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.btn-style1 > button > div{
+    position: relative;
+    
+}
+
+.btn-style1 > button > div::before{
+    content: '';
+    position: absolute;
+    left: -2px;
+    bottom: -7px;
+    height: 10px;
+    width: 10px;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.btn-style1 > button > div::after{
+    content: '';
+    position: absolute;
+    left: 180px;
+    top: -41.5px;
+    height: 10px;
+    width: 10px;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+
+}
+.submit-btn {
+    margin-left: 25%;
+    margin-top: 100px;
+    
+}
+
+
+.sign-up-btn {
+    position: absolute;
+    left:85%;
+    margin-top: 40px;
+    z-index: 2;
+}
+
+#back-main-btn{
+    margin-top:40px;
+}
+
+.sign-up-btn > button {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.sign-up-btn > button::before{
+    border-left: 1px solid rgba(0, 0, 0, 0.75);;
+    border-top: 1px solid rgba(0, 0, 0, 0.75);;
+}
+
+.sign-up-btn > button::after{
+    border-right: 1px solid rgba(0, 0, 0, 0.75);;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.75);;
+}
+
+.sign-up-btn > button > div::before{
+    border-left: 1px solid rgba(0, 0, 0, 0.75);;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.75);;
+}
+
+.sign-up-btn > button > div::after{
+    border-right: 1px solid rgba(0, 0, 0, 0.75);;
+    border-top: 1px solid rgba(0, 0, 0, 0.75);;
+}
+
+#security-level{
+    display: inline-block;
+}
+#security-level > li{
+    display: inline-block;
+    margin-right: 10px;
+    opacity: 0.5;
+}
+
+.white{
+    opacity: 1 !important;
+}
+
+.correct{
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 23px;
+}
+
+.success-sign-up {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-size: 40px;
+}
+
+
+.none-display {
+    display: none !important;
+}

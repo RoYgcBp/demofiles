@@ -1,0 +1,130 @@
+
+@keyframes mask-enter1{
+    from{
+
+    }
+    to{
+        transform: translateY(-120%);
+    }
+}
+
+
+.super-admin-mask1 {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color:aliceblue;
+    z-index: 2;
+    animation: mask-enter1 0.6s forwards;
+    z-index:20;
+}
+
+@keyframes mask-enter2 {
+    from {
+
+    }
+
+    to {
+        transform: translateY(120%);
+    }
+}
+
+
+.super-admin-mask2 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 50%;
+    background-color: aliceblue;
+    z-index: 2;
+    animation: mask-enter2 0.6s forwards;
+    z-index: 20;
+}
+
+.guide-column {
+    position: relative;
+    background-color: aliceblue;
+    padding: 8px;
+    box-shadow: 0px 10px 5px -5px rgb(17, 17, 17, 0.60);
+    z-index: 10;
+}
+
+.guide-column > span{
+    position:relative;
+    font-size: 25px;
+    margin-left:80px;
+    user-select:none;
+    cursor:pointer;
+}
+
+#exit-span {
+    position: absolute;
+    right:50px;
+}
+
+@keyframes guide-span-anim{
+    from{
+
+    }
+    to{
+        opacity:0.5;
+    }
+}
+
+.guide-column > span:hover {
+    animation: guide-span-anim 0.5s forwards;
+}
+
+.guide-sub {
+    list-style: none;
+    background-color: aliceblue;
+    padding: 5px 0 15px 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 90px;
+    box-shadow: 5px 10px 5px -3px rgb(17, 17, 17, 0.60);
+}
+
+
+@keyframes guide-sub-enter {
+    from {
+        transform: translateY(-200px);
+    }
+
+    to {
+
+    }
+}
+
+.guide-sub-enter {
+    animation: guide-sub-enter 0.5s forwards;
+}
+
+.guide-sub-leave {
+    animation: guide-sub-enter 0.5s forwards reverse;
+}
+
+.guide-sub > li {
+
+    margin-top: 10px;
+    font-size: 18px;
+    user-select: none;
+    cursor: pointer;
+    
+}
+
+.guide-sub > li:hover{
+    animation: guide-span-anim 0.5s forwards;
+}
+
+.manage-sub{
+    position:absolute;
+    margin-left:190px;
+    z-index:9;
+}
+
+.brench-div{
+    position:relative;
+    margin:10px;
+    z-index:2;
+}
